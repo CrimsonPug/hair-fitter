@@ -1,0 +1,19 @@
+.App-header {
+  text-align: center;
+  display: table;
+  background-color: #333;
+  height: 150px;
+  width: 100%; }
+  .App-header #hero {
+    color: white;
+    vertical-align: middle;
+    display: table-cell; }
+
+.male {
+  width: 50px; }
+
+.snap {
+  height: 50px;
+  width: 70px; }
+
+/*# sourceMappingURL=styles.css.map */

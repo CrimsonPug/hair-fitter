@@ -1,0 +1,26 @@
+$header-color: #333;
+$widest : 100%;
+$icon-height :50px;
+$icon-width :70px;
+
+.App-header{
+    text-align: center;
+    display:table;
+    background-color: $header-color;
+    height: 150px;
+    width: $widest;
+    #hero{
+        color:white;
+        vertical-align: middle;
+        display:table-cell;
+    }
+}
+
+.male{
+    width: 50px
+}
+
+.snap{
+    height: $icon-height;
+    width : $icon-width;
+}

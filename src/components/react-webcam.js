@@ -8,7 +8,7 @@ function hasGetUserMedia() {
 
 export default class Webcam extends Component {
   static defaultProps = {
-    audio: true,
+    audio: false,
     height: 480,
     width: 640,
     screenshotFormat: 'image/webp',
@@ -53,6 +53,7 @@ export default class Webcam extends Component {
 
     if (!this.state.hasUserMedia && !Webcam.userMediaRequested) {
       this.requestUserMedia();
+      console.log('lol');
     }
   }
 
