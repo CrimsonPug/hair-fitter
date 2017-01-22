@@ -4,7 +4,6 @@ import snap from './../styles/logo/camera.svg';
 import trash from './../styles/logo/trash.svg';
 import upload from './../styles/logo/upload.svg';
 import axios from 'axios'
-import authCode from './../auth_code.py'
 
 export default class Camera extends Component {
     constructor(props){
@@ -35,7 +34,6 @@ export default class Camera extends Component {
     }
     upload(){
         console.log(this.state);
-        console.log(authCode.auth_code);
         //send the state object to back end here 
         var config={headers:{
             "Content-Type":"application/json"},
