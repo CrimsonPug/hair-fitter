@@ -21,14 +21,14 @@ export default class Button extends Component {
                                 <img className="icon" src={male} />
                             </Link>
                             <h2>Male Hairstyle</h2>
-                            <p>Unleash your </p>
+                            <p>Step up your style game</p>
                         </div>
                         <div className="col-sm-12 col-lg-4">
                             <Link to="/camera">
                                 <img className="icon" src={female} />
                             </Link>
                             <h2>Female Hairstyle</h2>
-                            <p>Find out how simple it is to record statistics</p>
+                            <p>Get some honest mathematical opinion</p>
                         </div>
                         <div className="col-sm-12 col-lg-4">
                             <Link to="/camera">

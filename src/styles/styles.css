@@ -4,9 +4,10 @@ body {
 .App-header {
   text-align: center;
   display: table;
-  background-color: #39638F;
+  background-color: #3289C7;
   height: 200px;
-  width: 100%; }
+  width: 100%;
+  margin-bottom: 100px; }
   .App-header h1 {
     text-align: center;
     font-weight: 100;
