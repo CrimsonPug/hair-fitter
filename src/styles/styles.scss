@@ -1,18 +1,32 @@
-$header-color: #333;
+$header-color: #39638F;
 $widest : 100%;
 $icon-height :50px;
 $icon-width :70px;
+$pcolor: #b3b3b3;
+$p-font-size:1.8rem;
+
+body{
+    background-color: #F7FBFF;
+}
 
 .App-header{
     text-align: center;
     display:table;
     background-color: $header-color;
-    height: 150px;
+    height: 200px;
     width: $widest;
-    #hero{
-        color:white;
-        vertical-align: middle;
-        display:table-cell;
+        h1{
+            // font-family: billabong, 'billabongregular';
+            text-align: center;
+            font-weight: 100;
+            font-size: 13rem;
+            margin: 2rem 0;
+            letter-spacing: -1px;
+            text-shadow: 0px 4px 0 rgba(18,86,136,0.11);
+            a{
+                    color: white;
+                    text-decoration: none;
+            }
     }
 }
 
@@ -23,4 +37,36 @@ $icon-width :70px;
 .snap{
     height: $icon-height;
     width : $icon-width;
+}
+
+.description-wrapper{
+    text-align: center;
+    width:60%;
+    margin:auto;
+    h2{
+        font-family: adobe-clean,helvetica,arial,sans-serif;
+        font-weight: 800;
+        font-style: normal;
+    }
+    p{
+        color: $pcolor;
+        font-size: $p-font-size;
+    }
+}
+
+.row{
+    margin: $icon-width;
+    .col-lg-4{
+        text-align: center;
+        .icon{
+            width:20%;
+            height:20%;
+            -webkit-transition: width 0.2s, height 0.2s; /* For Safari 3.1 to 6.0 */
+            transition: width 0.2s height 0.2s;
+            &:hover{
+                width:30%;
+                height:30%;
+            }   
+        }
+    }
 }

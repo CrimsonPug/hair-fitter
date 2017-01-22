@@ -20,7 +20,6 @@ export default class Camera extends Component {
     }
     snap(){
         var screenshot = this.refs.webcam.getScreenshot();
-        
         console.log(screenshot);
         this.setState({
             screenshot
@@ -29,7 +28,6 @@ export default class Camera extends Component {
     render(){
         return(
             <div>
-                
                 <div>
                     <img onClick={this.snap} src={snap} className="snap" alt="logo"/>
                 </div>

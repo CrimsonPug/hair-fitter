@@ -15,9 +15,6 @@ class App extends Component {
             <Link to="/">Hair Fitter</Link>
           </h1>
         </div>
-        <p className="App-intro">
-          To get started, edit <code>src/App.js</code> and save to reload.
-        </p>
         {this.props.children}
       </div>
     );
