@@ -3,7 +3,8 @@ import Webcam from './react-webcam';
 import snap from './../styles/logo/camera.svg';
 import trash from './../styles/logo/trash.svg';
 import upload from './../styles/logo/upload.svg';
-import axios from 'axios'
+import axios from 'axios';
+import './../styles/styles.css'
 
 export default class Camera extends Component {
     constructor(props){
@@ -49,12 +50,12 @@ export default class Camera extends Component {
     render(){
         // console.log(this.props)
         return(
-            <div>
+            <div className="camera-wrapper">
                 <div>
                     <img onClick={this.snap} src={snap} className="snap" alt="logo"/>
                 </div>
                 {this.state.screenshot ? 
-                        <div>
+                        <div className="control-wrapper">
                             <img src={this.state.screenshot} /> 
                             <img onClick={this.delete} src={trash} className="snap" alt="logo"/>
                             <img onClick={this.upload} src={upload} className="snap" alt="logo"/>

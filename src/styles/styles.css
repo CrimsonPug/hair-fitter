@@ -57,4 +57,9 @@ body {
       color: #b3b3b3;
       font-size: 1.8rem; }
 
+.camera-wrapper {
+  text-align: center; }
+  .camera-wrapper .control-wrapper {
+    display: block; }
+
 /*# sourceMappingURL=styles.css.map */

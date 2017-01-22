@@ -24,7 +24,7 @@ class App extends Component {
       <div className="App">
         <div className="App-header">   
           <h1 id="hero">
-            <Link to="/">Hair Fitter</Link>
+            <Link to="/">Hair Styler</Link>
           </h1>
         </div>
         {React.cloneElement(this.props.children, { categorySelect:this.categorySelect , data: this.state })}
