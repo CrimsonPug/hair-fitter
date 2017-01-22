@@ -3,6 +3,8 @@ import Webcam from './react-webcam';
 import snap from './../styles/logo/camera.svg';
 import trash from './../styles/logo/trash.svg';
 import upload from './../styles/logo/upload.svg';
+import axios from 'axios'
+import authCode from './../auth_code.py'
 
 export default class Camera extends Component {
     constructor(props){
@@ -27,12 +29,24 @@ export default class Camera extends Component {
         var properData = splitString[1];
        
         this.setState({
-            screenshot 
+            screenshot : screenshot,
+            proper : properData
         })
     }
     upload(){
         console.log(this.state);
+        console.log(authCode.auth_code);
         //send the state object to back end here 
+        var config={headers:{
+            "Content-Type":"application/json"},
+             auth: {
+                username: 'test',
+                password: 'Password123'
+              }
+            };
+        axios.post('https://face-fitter-backend-kcajfire.c9users.io/api/face', { "base64" : this.state.proper}, config).then(function(response){
+            console.log('Success: ' + response);
+          });
     }
     render(){
         // console.log(this.props)
