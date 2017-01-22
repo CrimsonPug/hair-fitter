@@ -15,7 +15,7 @@ body{
     background-color: $header-color;
     height: 200px;
     width: $widest;
-    margin-bottom:100px;
+    margin-bottom:70px;
         h1{
             // font-family: billabong, 'billabongregular';
             text-align: center;
@@ -27,6 +27,7 @@ body{
             a{
                     color: white;
                     text-decoration: none;
+                    cursor: pointer;
             }
     }
 }
@@ -67,7 +68,12 @@ body{
             &:hover{
                 width:30%;
                 height:30%;
+                cursor: pointer;
             }   
+        }
+        p{
+            color: $pcolor;
+            font-size: $p-font-size;
         }
     }
 }

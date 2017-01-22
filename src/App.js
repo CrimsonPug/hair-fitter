@@ -7,6 +7,18 @@ import Webcam from './components/react-webcam';
 import { Link } from 'react-router';
 
 class App extends Component {
+  constructor(){
+    super();
+    this.state = {
+      category : null
+    }
+    this.categorySelect = this.categorySelect.bind(this);
+  }
+  categorySelect(data){
+    this.setState({
+      category:data.category
+    })
+  }
   render() {
     return (
       <div className="App">
@@ -15,7 +27,7 @@ class App extends Component {
             <Link to="/">Hair Fitter</Link>
           </h1>
         </div>
-        {this.props.children}
+        {React.cloneElement(this.props.children, { categorySelect:this.categorySelect , data: this.state })}
       </div>
     );
   }

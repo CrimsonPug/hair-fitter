@@ -8,6 +8,20 @@ import neutral from './../styles/logo/horse.svg';
 
 
 export default class Button extends Component {
+    constructor(){
+        super();
+        this.state = {
+            category: null
+        }
+        this.selectCategory = this.selectCategory.bind(this);
+    }
+    selectCategory(){
+        let data = {
+            category: 'male'
+        }
+        this.props.categorySelect(data);
+        // console.log(data);
+    }
     render(){
         return(
             <div>
@@ -18,7 +32,7 @@ export default class Button extends Component {
                 <div className="button-container row">
                         <div className="col-sm-12 col-lg-4">
                             <Link to="/camera">
-                                <img className="icon" src={male} />
+                                <img id={1} onClick={this.selectCategory} className="icon" src={male} />
                             </Link>
                             <h2>Male Hairstyle</h2>
                             <p>Step up your style game</p>
